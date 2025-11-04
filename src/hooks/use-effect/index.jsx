@@ -16,7 +16,7 @@ export const UseEffectExample = () => {
     useEffect(()=>{
        console.log('Test Single useEffect');
         
-    },[]);
+    },[showEffect]);
 
     return (
         <div>
