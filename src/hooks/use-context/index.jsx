@@ -9,7 +9,7 @@ export const SmartHome = () => {
 
   return (
     <LightContext.Provider value={{ isLightOn, setIsLightOn }}>
-      <div style={{ textAlign: "center", marginTop: "40px" }}>
+      <div className="bg-amber-200 rounded-2xl">
         <h1>🏠 Smart Home Control</h1>
         <LightSwitch />
         <LightBulb />
@@ -25,12 +25,7 @@ const LightSwitch = () => {
   return (
     <button
       onClick={() => setIsLightOn((prev) => !prev)}
-      style={{
-        padding: "10px 20px",
-        margin: "10px",
-        cursor: "pointer",
-        fontSize: "16px",
-      }}
+      className="px-5 py-2.5 m-2 cursor-pointer  bg-amber-500 rounded-2xl outline-2 hover:caret-amber-700"
     >
       💡 Toggle Light
     </button>
